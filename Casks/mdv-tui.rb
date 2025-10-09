@@ -3,7 +3,7 @@ cask "mdv-tui" do
   name "mdv-tui"
   desc "Terminal-based markdown viewer (TUI only)"
   homepage "https://github.com/iiatlas/mdv"
-  version "1.0.22"
+  version "1.0.24"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,11 +14,11 @@ cask "mdv-tui" do
   on_linux do
     on_intel do
       url "https://github.com/iiAtlas/mdv/releases/download/v#{version}/mdv- tui_#{version}_linux_x86_64.tar.gz"
-      sha256 "b9cb6b5e7cc27c364b3a776c182b805700e4c7e86c7b97a9da5dbf13e4b8cf30"
+      sha256 "12b5af18532975524dab141521ef4e2d9854f784905d8d4f5bf127fc4805c414"
     end
     on_arm do
       url "https://github.com/iiAtlas/mdv/releases/download/v#{version}/mdv- tui_#{version}_linux_arm64.tar.gz"
-      sha256 "fdd4a88d5777454725d8c4fe002d8cddee3162715aff7e50bc39d138590549bd"
+      sha256 "70d5d9fecf54f3429b3a2c80dcaaddee5f388578a9e99c204d6888ad86902227"
     end
   end
 
