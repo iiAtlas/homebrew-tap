@@ -3,7 +3,7 @@ cask "mdv-gui" do
   name "mdv-gui"
   desc "Native GUI markdown viewer"
   homepage "https://github.com/iiatlas/mdv"
-  version "1.0.13"
+  version "1.0.18"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,11 +14,11 @@ cask "mdv-gui" do
   on_macos do
     on_intel do
       url "https://github.com/iiAtlas/mdv/releases/download/v#{version}/mdv- gui_#{version}_darwin_x86_64.tar.gz"
-      sha256 "2e8db71fbce72da53c8987ea2a79f165dd14a1782aa5c30534da0d4de36f311c"
+      sha256 "521e8eaaba7fe164ee29fc20e832cf859b4a098208f7b8ed4c4f4869da3a1a83"
     end
     on_arm do
       url "https://github.com/iiAtlas/mdv/releases/download/v#{version}/mdv- gui_#{version}_darwin_arm64.tar.gz"
-      sha256 "4a2ef72eec4f352cc4a1cdfffa53e92f7a80b9e832b72159ed3a645590e31024"
+      sha256 "79bfd62c979b8701c14ce0b42cf31efde52e8b97f185fd85effd4f723019a599"
     end
   end
 
