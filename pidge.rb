@@ -5,20 +5,20 @@
 class Pidge < Formula
   desc "Share a single HTML page, briefly."
   homepage "https://pidge.to"
-  version "0.1.1"
+  version "0.1.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_darwin_amd64.tar.gz"
-      sha256 "1a10ccff5409a56d9ebcb830b7b248cf472152f27483ceb0a201487f84e18397"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_darwin_amd64.tar.gz"
+      sha256 "e3a62b33e888732c9533e8c42b1e32d0d6a38633528db978ead503a8ce6ab472"
 
       define_method(:install) do
         bin.install "pidge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_darwin_arm64.tar.gz"
-      sha256 "07df1d590b1f702e17d371d97fa91a913c0f9d5bc4854cfc65a66738a7c1e207"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_darwin_arm64.tar.gz"
+      sha256 "0b0898f61ff2e9ea48a95555105f57ae542f9268cfa05d16310c3c1c3d8b3399"
 
       define_method(:install) do
         bin.install "pidge"
@@ -28,15 +28,15 @@ class Pidge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_linux_amd64.tar.gz"
-      sha256 "cebbc01ecafbcd73aeec8fb068a02239e863b6033d7fb4c39837f86783f7b4ae"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_linux_amd64.tar.gz"
+      sha256 "80da9ee4a669155bc2bca99488aacd09f5ddc56274acf409a75548b3eef5705e"
       define_method(:install) do
         bin.install "pidge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_linux_arm64.tar.gz"
-      sha256 "f33d232c9bb13fba73c9fcf32e67ab2c4e73f4774cfc50cb45c3b347a6b894b3"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_linux_arm64.tar.gz"
+      sha256 "fd90d6b3a2aa92a49c8aa702f59e08dfd1e336ad03a656798b68440f0cb542b6"
       define_method(:install) do
         bin.install "pidge"
       end
@@ -44,6 +44,6 @@ class Pidge < Formula
   end
 
   test do
-    system "#{bin}/pidge", "--help"
+    system "#{bin}/pidge", "--version"
   end
 end
