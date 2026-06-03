@@ -5,20 +5,20 @@
 class Pidge < Formula
   desc "Share a single HTML page, briefly."
   homepage "https://pidge.to"
-  version "0.1.0"
+  version "0.1.1"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iiAtlas/pidge.to/releases/download/v0.1.0/pidge_0.1.0_darwin_amd64.tar.gz"
-      sha256 "56b78f695ef04df511bad45d33d2b5b46309691feccf7afe211fd4be399fedf9"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_darwin_amd64.tar.gz"
+      sha256 "1a10ccff5409a56d9ebcb830b7b248cf472152f27483ceb0a201487f84e18397"
 
       define_method(:install) do
         bin.install "pidge"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iiAtlas/pidge.to/releases/download/v0.1.0/pidge_0.1.0_darwin_arm64.tar.gz"
-      sha256 "577daa8bb89c74bc99a8ce3308ac8c08e193e644a79c9ccdbfb7b11f4048e987"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_darwin_arm64.tar.gz"
+      sha256 "07df1d590b1f702e17d371d97fa91a913c0f9d5bc4854cfc65a66738a7c1e207"
 
       define_method(:install) do
         bin.install "pidge"
@@ -28,15 +28,15 @@ class Pidge < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iiAtlas/pidge.to/releases/download/v0.1.0/pidge_0.1.0_linux_amd64.tar.gz"
-      sha256 "1266502918c34eb6073be6da342656e8f9595c41516083c9141b2682daf908ca"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_linux_amd64.tar.gz"
+      sha256 "cebbc01ecafbcd73aeec8fb068a02239e863b6033d7fb4c39837f86783f7b4ae"
       define_method(:install) do
         bin.install "pidge"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iiAtlas/pidge.to/releases/download/v0.1.0/pidge_0.1.0_linux_arm64.tar.gz"
-      sha256 "13b982b03f3a782adf2b1e49e60a2a8d4c600cb710182b71d4e3a6cfcc39aca7"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.1/pidge_0.1.1_linux_arm64.tar.gz"
+      sha256 "f33d232c9bb13fba73c9fcf32e67ab2c4e73f4774cfc50cb45c3b347a6b894b3"
       define_method(:install) do
         bin.install "pidge"
       end
