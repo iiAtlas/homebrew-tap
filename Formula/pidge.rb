@@ -5,20 +5,20 @@
 class Pidge < Formula
   desc "Share HTML, Markdown, or text, briefly."
   homepage "https://pidge.to"
-  version "0.1.6"
+  version "0.1.8"
 
   if OS.mac? && Hardware::CPU.arm?
-    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.6/pidge_0.1.6_darwin_arm64.tar.gz"
-    sha256 "623ab6b0e4b8e8be9149d9df3deee3ca531c829d5719b76eabf5f38cc4cdfd55"
+    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.8/pidge_0.1.8_darwin_arm64.tar.gz"
+    sha256 "109f7d7cedf808940aed891a17d1d7a970396fc858fdf8d82327b111c3731e70"
   elsif OS.mac?
-    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.6/pidge_0.1.6_darwin_amd64.tar.gz"
-    sha256 "44d2ce9c4c040dd3ad37854e0fe02dc9ad45b88d52efc009105e2921afe3c66e"
+    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.8/pidge_0.1.8_darwin_amd64.tar.gz"
+    sha256 "629910dee735f588bd839398cbc7b708c32d3601f1dc340e9ad461e8ca695355"
   elsif OS.linux? && Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.6/pidge_0.1.6_linux_arm64.tar.gz"
-    sha256 "32e4352fcdb38e070a9908974b8f9f244c974ebd6dda777340cb1419cce68b47"
+    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.8/pidge_0.1.8_linux_arm64.tar.gz"
+    sha256 "a769f3263f43e61415d0b2485f84caaa5720679d6fe3956c7b7219a7dbf3ca82"
   elsif OS.linux?
-    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.6/pidge_0.1.6_linux_amd64.tar.gz"
-    sha256 "c0f87beeafa097e86db43ac614fcc03ea27f8ba53227b1f296da8f5683fb5142"
+    url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.8/pidge_0.1.8_linux_amd64.tar.gz"
+    sha256 "cc8ba399934bcb8e5282d3e00a4b9dd9b9683683d3aae5cb04959e7fa93b279b"
   end
 
   def install
