@@ -5,40 +5,44 @@
 class Pidge < Formula
   desc "Share a single HTML page, briefly."
   homepage "https://pidge.to"
-  version "0.1.2"
+  version "0.1.4"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_darwin_amd64.tar.gz"
-      sha256 "e3a62b33e888732c9533e8c42b1e32d0d6a38633528db978ead503a8ce6ab472"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.4/pidge_0.1.4_darwin_amd64.tar.gz"
+      sha256 "ec31f544d285e084b9bd836b29347587215ff1426ab29e77d6c2eaefdc0cd386"
 
       define_method(:install) do
         bin.install "pidge"
+        man1.install "cli/man/pidge.1"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_darwin_arm64.tar.gz"
-      sha256 "0b0898f61ff2e9ea48a95555105f57ae542f9268cfa05d16310c3c1c3d8b3399"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.4/pidge_0.1.4_darwin_arm64.tar.gz"
+      sha256 "4d295103f2cdc8ee2181bcc3ff151e84f9b4a65579351c66918a3c7d5c4269ff"
 
       define_method(:install) do
         bin.install "pidge"
+        man1.install "cli/man/pidge.1"
       end
     end
   end
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_linux_amd64.tar.gz"
-      sha256 "80da9ee4a669155bc2bca99488aacd09f5ddc56274acf409a75548b3eef5705e"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.4/pidge_0.1.4_linux_amd64.tar.gz"
+      sha256 "97adf3172130527fe3806e305bb1ef2248d4477639b25f8673dde0566fd57890"
       define_method(:install) do
         bin.install "pidge"
+        man1.install "cli/man/pidge.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.2/pidge_0.1.2_linux_arm64.tar.gz"
-      sha256 "fd90d6b3a2aa92a49c8aa702f59e08dfd1e336ad03a656798b68440f0cb542b6"
+      url "https://github.com/iiAtlas/pidge-releases/releases/download/v0.1.4/pidge_0.1.4_linux_arm64.tar.gz"
+      sha256 "a3b0704e87be14913c5b3b92229befd65f25c6c3e8cf7f82201ebd38d729547e"
       define_method(:install) do
         bin.install "pidge"
+        man1.install "cli/man/pidge.1"
       end
     end
   end
